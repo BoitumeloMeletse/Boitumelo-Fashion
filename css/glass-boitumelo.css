@@ -1,0 +1,194 @@
+/* Glass Merlin Page Styles */
+
+.main-content {
+  padding: 100px 30px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.main-head-of-color-gold {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+  height: 2px;
+  width: 100px;
+  background: linear-gradient(to right, transparent, white, transparent);
+  margin: 0 auto;
+}
+
+.merlin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  height: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+.quote-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 400px;
+}
+
+.quote-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.quote-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Glass footer */
+.glass-footer {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 50px 30px 20px;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-column h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-info {
+  margin-bottom: 20px;
+}
+
+.footer-subtext {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media screen and (max-width: 992px) {
+  .merlin-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quote-card {
+    grid-column: span 2;
+    height: 300px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-head-of-color-gold {
+    font-size: 2rem;
+  }
+
+  .merlin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-card {
+    grid-column: span 1;
+  }
+
+  .image-card,
+  .quote-card {
+    height: 300px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-head-of-color-gold {
+    font-size: 1.8rem;
+  }
+
+  .image-card,
+  .quote-card {
+    height: 250px;
+  }
+}
