@@ -1,4 +1,4 @@
-// Weather Forecast Functionality
+// Weather Functionality
 document.addEventListener("DOMContentLoaded", () => {
   const API_KEY = "4764e36cac2b0d43ab02c8560871a486"
   const locationInput = document.getElementById("location-input")
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const feelsLikeElement = document.getElementById("feels-like")
   const forecastContainer = document.getElementById("forecast")
 
-  // Get weather by city name
+  // Get weather by city name list
   const getWeatherByCity = (city) => {
     locationElement.textContent = "Loading..."
 
