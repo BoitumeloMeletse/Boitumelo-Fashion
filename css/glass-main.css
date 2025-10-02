@@ -14,6 +14,45 @@ body {
   overflow-x: hidden;
 }
 
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+  color: #e0e0e0;
+}
+
+body.dark-mode .glass-nav,
+body.dark-mode .glass-footer,
+body.dark-mode .glass-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-item {
+  color: #e0e0e0;
+}
+
+body.dark-mode .nav-item:after {
+  background-color: #e0e0e0;
+}
+
+body.dark-mode .cta-button {
+  background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 15px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
 /* Background shapes */
 .background {
   position: fixed;
