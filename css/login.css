@@ -1,3 +1,44 @@
+/* Light mode */
+body.light-mode {
+  background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+  color: #333;
+}
+
+body.light-mode .glass-nav {
+  background: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .logo-name,
+body.light-mode .nav-item {
+  color: #333;
+}
+
+body.light-mode .nav-item:after {
+  background-color: #333;
+}
+
+body.light-mode .glass-container,
+body.light-mode .glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode input,
+body.light-mode textarea {
+  color: #333;
+}
+
+body.light-mode .submit-btn,
+body.light-mode .login-btn {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+}
+
+body.light-mode .theme-toggle i {
+  color: #333;
+}
 
 .login-image{
     width:440px;

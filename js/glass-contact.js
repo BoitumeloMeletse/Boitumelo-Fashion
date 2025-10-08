@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       submitBtn.disabled = false
     }, 1500)
   })
+  
 
   // Add subtle animation to the background shapes
   const shapes = document.querySelectorAll(".shape")
@@ -87,3 +88,23 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.classList.toggle("toggle")
   })
 })
+
+  // Dark/Light Mode Toggle
+  const themeToggle = document.getElementById("theme-toggle");
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggle.innerHTML = `<i class="fas fa-sun"></i>`;
+  }
+
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+      themeToggle.innerHTML = `<i class="fas fa-sun"></i>`;
+    } else {
+      localStorage.setItem("theme", "light");
+      themeToggle.innerHTML = `<i class="fas fa-moon"></i>`;
+    }
+  });
