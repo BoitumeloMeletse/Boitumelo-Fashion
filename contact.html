@@ -1,163 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us | Boitumelo Fashion</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style_index.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/glass-contact.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact  Gaming</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/reviews.js"></script>
+  <script defer src="js/weather.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-    <!-- Simplified navbar without list items -->
-    <nav class="glass-nav">
-        <div class="logo">
-            <h3><a href="index.html" class="logo-name">Boitumelo Fashion</a></h3>
-        </div>
-        <div class="nav-links-container">
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="products.html" class="nav-item">Products</a>
-            <a href="categories.html" class="nav-item">Categories</a>
-            <a href="contact.html" class="nav-item active">Contact Us</a>
-            <a href="login.html" class="nav-item">Login</a>
-        </div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-          <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i>/button>
-</div>
+  <header>
+    <h1>🎮 Gaming Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
-
-    <!-- Background elements -->
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
+    <div class="header-tools">
+      <button id="theme-toggle">🌙</button>
+      <div id="weather" class="weather-widget">Loading...</div>
     </div>
+  </header>
 
-    <!-- Main content -->
-    <div class="contact-container">
-        <div class="contact-info-container">
-            <div class="glass-card info-card">
-                <h2>Get In Touch</h2>
-                <p class="subtitle">We'd love to hear from you. Here's how you can reach us.</p>
-                
-                <div class="contact-info">
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Address</h3>
-                            <p>123 Fashion Street, Styleville</p>
-                            <p>Gauteng, South Africa</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Phone</h3>
-                            <p>+27 61 467 2425</p>
-                            <p>Mon-Fri, 9am-5pm</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Email</h3>
-                            <p>info@boitumelofashion.com</p>
-                            <p>support@boitumelofashion.com</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="contact-form-container">
-            <div class="glass-card form-card">
-                <h2>Send Us A Message</h2>
-                <p class="subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
-                
-                <form id="contact-form">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-icon">
-                                <i class="fas fa-tag"></i>
-                            </div>
-                            <input type="text" id="subject" placeholder="Subject" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="input-group textarea-group">
-                            <div class="input-icon">
-                                <i class="fas fa-comment-alt"></i>
-                            </div>
-                            <textarea id="message" placeholder="Your Message" required></textarea>
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Map section -->
-    <div class="map-container">
-        <div class="glass-card map-card">
-            <h2>Find Us</h2>
-            <div class="map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.73401807985!2d28.047241936588347!3d-26.204097630351528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1623238273951!5m2!1sen!2sza" 
-                    width="100%" 
-                    height="300" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-        </div>
-    </div>
+  <main>
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name: <input type="text" id="name" required></label>
+        <label>Email: <input type="email" id="email" required></label>
+        <label>Message: <textarea id="message" required></textarea></label>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
 
-    <script src="js/glass-contact.js"></script>
-    
+    <section class="reviews">
+      <h2>Leave a Review</h2>
+      <form id="reviewForm">
+        <label for="reviewer">Name:</label>
+        <input type="text" id="reviewer" required>
+        <label for="rating">Rating:</label>
+        <select id="rating">
+          <option value="5">⭐⭐⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="1">⭐</option>
+        </select>
+        <label for="reviewText">Review:</label>
+        <textarea id="reviewText" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+
+      <div id="reviewsList"></div>
+    </section>
+  </main>
+
+ 
+  <footer>
+    <div class="footer-container">
+      <!-- Logo & About -->
+      <div class="footer-section logo-about">
+        <h2>🎮 Gaming Store</h2>
+        <p>Your ultimate gaming store for consoles, accessories, and exclusive titles. Explore new worlds and level up your gaming experience.</p>
+      </div>
+  
+      <!-- Links Sections -->
+      <div class="footer-section">
+        <h3>Store</h3>
+        <ul>
+          <li><a href="store.html">All Products</a></li>
+          <li><a href="store.html">New Arrivals</a></li>
+          <li><a href="store.html">Best Sellers</a></li>
+          <li><a href="store.html">Deals & Offers</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Games</h3>
+        <ul>
+          <li><a href="products.html">PS5 Games</a></li>
+          <li><a href="products.html">PS4 Games</a></li>
+          <li><a href="products.html">VR Games</a></li>
+          <li><a href="products.html">Top Rated</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Marketplaces</h3>
+        <ul>
+          <li><a href="#">Digital Store</a></li>
+          <li><a href="#">Retail Partners</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Recently Viewed</a></li>
+          <li><a href="#">Compare Products</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Online Services</h3>
+        <ul>
+          <li><a href="#">PlayStation Plus</a></li>
+          <li><a href="#">Cloud Gaming</a></li>
+          <li><a href="#">Support & Help</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Gaming Store. All rights reserved. Gaming Store, the Gaming Store logo, DualSense, and all related logos and content are trademarks of Sony Interactive Entertainment Inc. Other brands or product names are the trademarks of their respective owners. Links to third-party websites are provided for convenience; we are not responsible for their content or accuracy.</p>
+    </div>
+  </footer>
+  
 </body>
 </html>

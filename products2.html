@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Products | Boitumelo Fashion</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/products2.css">
+    <link rel="stylesheet" href="css/glass-main.css">
+    <link rel="stylesheet" href="css/glass-products.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Background elements -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Glass navbar -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <h3><a href="index.html" class="logo-name">Boitumelo Fashion</a></h3>
+        </div>
+        <div class="nav-links-container">
+            <a href="index2.html" class="nav-item">Home</a>
+            <a href="products2.html" class="nav-item active">Products</a>
+            <a href="categories.html" class="nav-item">Categories</a>
+            <a href="contact2.html" class="nav-item">Contact Us</a>
+            <a href="login.html" class="nav-item">Login</a>
+            <a href="#" class="nav-item" id="toggle-weather">Weather</a>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i>/button>
+    </nav>
+
+    <main class="main-content">
+        <div class="glass-card page-header">
+            <h2 class="main-head-of-products">Everyone Has A Style Statement<br>
+                <span class="colored-word-bigger-size">FIND YOURS HERE!</span>
+            </h2>
+        </div>
+
+        <div class="glass-card hero-card">
+            <div class="bg-images">
+                <img src="images/products-img/marcus-loke-xXJ6utyoSw0-unsplash (1).jpg" alt="Fashion Hero">
+            </div>
+        </div>
+
+        <div class="glass-card instruction-card">
+            <p class="msg-ps">
+                <span class="colored-word">Click</span> on the product to add in your shopping list.
+                <br>Go below and check <span class="colored-word">YOUR CART</span> for details.
+            </p>
+        </div>
+
+        <div class="products-section">
+            <div class="glass-card section-header">
+                <h1>For <span class="colored-word">Her</span></h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="product-grid kurti">
+                <div class="glass-card product-card" id="AKS  Kurta with Plazzzo & Dupatta || Rs.1799" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/kurti1.png" alt="Kurti 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>AKS Kurta with Plazzzo & Dupatta</h3>
+                        <p class="price">R1,799</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="Nayo Women Solid Kurta with Trouser || Rs.1649" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/kurti2.png" alt="Kurti 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nayo Women Solid Kurta with Trouser</h3>
+                        <p class="price">R1,649</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="AKS Printed Staight Kurta || Rs.659" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/kurti3.png" alt="Kurti 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>AKS Printed Staight Kurta</h3>
+                        <p class="price">R659</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="Fabindia Slim Fit Straight Kurta || Rs.1990" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/kurti4.png" alt="Kurti 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fabindia Slim Fit Straight Kurta</h3>
+                        <p class="price">R1,990</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid western">
+                <div class="glass-card product-card" id="Ives Solid Shirt Style Top || Rs.549" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/western1.png" alt="Western 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ives Solid Shirt Style Top</h3>
+                        <p class="price">R549</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="Style Quotient Solid Top || Rs.554" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/western2.png" alt="Western 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Style Quotient Solid Top</h3>
+                        <p class="price">R554</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="HERE&NOW Printed A-Line Top || Rs.549" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/western3.png" alt="Western 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>HERE&NOW Printed A-Line Top</h3>
+                        <p class="price">R549</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="SASSAFRAS Ruffled Shirt Style Top || Rs. 549" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/women/western4.png" alt="Western 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>SASSAFRAS Ruffled Shirt Style Top</h3>
+                        <p class="price">R549</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More product sections for women's shoes, etc. -->
+            
+            <div class="glass-card section-header">
+                <h1>For <span class="colored-word">Him</span></h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="product-grid shirts">
+                <div class="glass-card product-card" id="Difference of Opinion Printed Shirt || Rs.449" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/men/shirt1.png" alt="Shirt 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Difference of Opinion Printed Shirt</h3>
+                        <p class="price">R449</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="Moda Rapido Printed Round Neck T-shirt || Rs.486" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/men/shirt2.png" alt="Shirt 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Moda Rapido Printed Round Neck T-shirt</h3>
+                        <p class="price">R486</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="DILLINGER Colourblocked Round Neck T-shirt || Rs.404" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/men/shirt3.png" alt="Shirt 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>DILLINGER Colourblocked Round Neck T-shirt</h3>
+                        <p class="price">R404</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card product-card" id="Roadster T-shirt with Shoulder patch || Rs.519" onclick="add(this.id)">
+                    <div class="product-image">
+                        <img src="images/products-img/men/shirt4.png" alt="Shirt 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Roadster T-shirt with Shoulder patch</h3>
+                        <p class="price">R519</p>
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More product sections for men's jeans, etc. -->
+            
+            <div class="glass-card end-message">
+                <h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <div class="glass-card cart-container">
+            <div class="cart-details">
+                <h2 class="head-of-cart">Your Cart</h2>
+                <hr class="hr-of-cart-head">
+                <ul id="ul_pr"></ul>
+                <button class="btn-clear-list" onclick="emptyList()"> 
+                    <span class="colored-word">Clear My List</span>
+                </button>
+                <br>
+                <small>Can't see anything? Click & add your favorite fashion in
+                <span class="colored-word">Shopping List!</span></small>
+            </div>
+        </div>
+
+        <div class="glass-card" id="quote-section" style="text-align: center; padding: 20px; margin-top: 40px;">
+            <blockquote id="fashion-quote" style="font-size: 1.1rem; font-style: italic;">Loading fashion quote...</blockquote>
+            <p id="quote-author" style="margin-top: 10px; font-weight: bold;"></p>
+            <button id="refresh-quote" class="btn-clear-list" style="margin-top: 10px;">Refresh Quote</button>
+        </div>
+
+    </main>
+      
+    
+    <script src="js/products2.js"></script>
+    <script src="js/glass-main.js"></script>
+  </body>
+</html>

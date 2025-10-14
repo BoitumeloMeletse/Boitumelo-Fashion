@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boitumelo Fashion | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/glass-main.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head> 
+<body>  
+    <!-- Background elements -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Glass navbar -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <h3><a href="index.html" class="logo-name">Boitumelo Fashion</a></h3>
+        </div>
+        <div class="nav-links-container">
+            <a href="index2.html" class="nav-item active">Home</a>
+            <a href="products2.html" class="nav-item">Products</a>
+            <a href="categories.html" class="nav-item">Categories</a>
+            <a href="contact2.html" class="nav-item">Contact Us</a>
+            <a href="login.html" class="nav-item">Login</a>
+            <a href="#" class="nav-item" id="toggle-weather">Weather</a>
+            <a href="index.html" class="nav-item active">Gaming site</a>
+           
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+         <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i>/button>
+    </nav>
+
+    <!-- Weather Widget -->
+    <div class="weather-widget">
+        <div class="weather-header">
+            <h3>Weather Forecast</h3>
+            <div class="weather-search">
+                <input type="text" id="location-input" placeholder="Enter city name">
+                <button id="search-btn">Search</button>
+                <button id="current-location-btn">Current Location</button>
+            </div>
+        </div>
+        <div class="weather-content">
+            <div class="current-weather">
+                <h2 id="location">Loading...</h2>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <span id="temperature">--</span>°C
+                        <div class="weather-description">
+                            <img id="weather-icon-img" src="/placeholder.svg" alt="Weather icon">
+                            <span id="weather-description">--</span>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <span class="label">Feels like:</span>
+                            <span id="feels-like">--</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Humidity:</span>
+                            <span id="humidity">--</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Wind:</span>
+                            <span id="wind-speed">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast" class="forecast"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Weather Widget -->
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="glass-card hero-card">
+                <div class="hero-content">
+                    <h1>Elevate Your Style</h1>
+                    <p>Discover the latest fashion trends and express yourself</p>
+                    <a href="products.html" class="cta-button">Shop Now</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/index-img/Off-the-Wall.jpg" alt="Fashion Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="featured-section">
+            <div class="section-header glass-card">
+                <h2>Featured Categories</h2>
+                <p>Explore our curated collections</p>
+            </div>
+            <div class="featured-grid">
+                <a href="categories.html" class="glass-card category-card">
+                    <img src="images/index-img/1.png" alt="Category 1">
+                    <div class="card-overlay">
+                        <h3>Summer Collection</h3>
+                    </div>
+                </a>
+                <a href="categories.html" class="glass-card category-card">
+                    <img src="images/index-img/2.png" alt="Category 2">
+                    <div class="card-overlay">
+                        <h3>Accessories</h3>
+                    </div>
+                </a>
+                <a href="categories.html" class="glass-card category-card">
+                    <img src="images/index-img/3.png" alt="Category 3">
+                    <div class="card-overlay">
+                        <h3>Footwear</h3>
+                    </div>
+                </a>
+                <a href="categories.html" class="glass-card category-card">
+                    <img src="images/index-img/4.png" alt="Category 4">
+                    <div class="card-overlay">
+                        <h3>New Arrivals</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="lifestyle-section">
+            <div class="section-header glass-card">
+                <h2>For the Young, Wild & Stylish</h2>
+                <p>Fashion that defines you</p>
+            </div>
+            <div class="lifestyle-grid">
+                <div class="glass-card lifestyle-card">
+                    <img src="images/index-img/anton-levin-P8prss71psk-unsplash.jpg" alt="Lifestyle 1">
+                    <div class="card-content">
+                        <h3>For the Young, Wild & Stylish</h3>
+                        <a href="categories.html" class="card-link">Explore</a>
+                    </div>
+                </div>
+                <div class="glass-card lifestyle-card">
+                    <img src="images/index-img/bogdan-glisik-2WgOPYJuPsU-unsplash (1).jpg" alt="Lifestyle 2">
+                    <div class="card-content">
+                        <h3>Just like your way to Conquer</h3>
+                        <a href="categories.html" class="card-link">Explore</a>
+                    </div>
+                </div>
+                <div class="glass-card lifestyle-card">
+                    <img src="images/index-img/calvin-lupiya--yPg8cusGD8-unsplash.jpg" alt="Lifestyle 3">
+                    <div class="card-content">
+                        <h3>Stands out like the Sun</h3>
+                        <a href="categories.html" class="card-link">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="trending-section">
+            <div class="section-header glass-card">
+                <h2>TRENDING NOW</h2>
+                <p>From the runway to your wardrobe</p>
+            </div>
+            <div class="trending-grid">
+                <a href="products.html" class="glass-card product-card">
+                    <img src="images/index-img/ethan-haddox-QHGcADeeT00-unsplash.jpg" alt="Product 1">
+                    <div class="product-info">
+                        <h3>Premium Sneakers</h3>
+                        <span class="price">R1,299</span>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card product-card">
+                    <img src="images/index-img/andres-jasso-PqbL_mxmaUE-unsplash (1).jpg" alt="Product 2">
+                    <div class="product-info">
+                        <h3>Designer Shoes</h3>
+                        <span class="price">R1,499</span>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card product-card">
+                    <img src="images/index-img/raul-hender-afc4HxPy2GM-unsplash (1).jpg" alt="Product 3">
+                    <div class="product-info">
+                        <h3>Urban Sneakers</h3>
+                        <span class="price">R999</span>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card product-card">
+                    <img src="images/index-img/nike.png" alt="Product 4">
+                    <div class="product-info">
+                        <h3>Nike Air Max</h3>
+                        <span class="price">R1,899</span>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card product-card">
+                    <img src="images/index-img/my-shoes2.png" alt="Product 5">
+                    <div class="product-info">
+                        <h3>Classic Runners</h3>
+                        <span class="price">R1,199</span>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card product-card">
+                    <img src="images/index-img/my-shoes3.png" alt="Product 6">
+                    <div class="product-info">
+                        <h3>Sport Edition</h3>
+                        <span class="price">R1,599</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Style Inspiration Section -->
+        <section class="inspiration-section">
+            <div class="section-header glass-card">
+                <h2>STYLES TO STEAL</h2>
+                <p>Inspired by influencers</p>
+            </div>
+            <div class="inspiration-grid">
+                <a href="products.html" class="glass-card inspiration-card">
+                    <img src="images/index-img/girl1.png" alt="Style 1">
+                    <div class="card-overlay">
+                        <h3>Summer Vibes</h3>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card inspiration-card">
+                    <img src="images/index-img/girl2.png" alt="Style 2">
+                    <div class="card-overlay">
+                        <h3>Urban Chic</h3>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card inspiration-card">
+                    <img src="images/index-img/girl3.png" alt="Style 3">
+                    <div class="card-overlay">
+                        <h3>Casual Elegance</h3>
+                    </div>
+                </a>
+                <a href="products.html" class="glass-card inspiration-card">
+                    <img src="images/index-img/girl4.png" alt="Style 4">
+                    <div class="card-overlay">
+                        <h3>Street Style</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Glass Footer -->
+    <footer class="glass-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Boitumelo FASHION🦋</h2>
+                <p class="footer-heading">ONLINE SHOPPING</p>
+                <ul class="footer-links">
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="Kids.html">Kids</a></li>
+                    <li><a href="exclusive.html">Boitumelo Exclusive</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <p class="footer-heading">USEFUL LINKS</p>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="t&c.html">T&C</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-info">
+                    <p><strong>100% Original</strong> guarantee</p>
+                    <p class="footer-subtext">for all products at boitumelofashion.com</p>
+                </div>
+                <div class="footer-info">
+                    <p><strong>Return within 30days</strong> of</p>
+                    <p class="footer-subtext">receiving your order</p>
+                </div>
+                <div class="footer-info">
+                    <p><strong>Get free delivery</strong> for every</p>
+                    <p class="footer-subtext">order above R999</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><a href="index.html">Boitumelo</a> &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/glass-main.js"></script>
+    <script src="js/weather2.js"></script>
+</body>
+</html>

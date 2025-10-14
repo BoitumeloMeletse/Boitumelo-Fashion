@@ -1,306 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boitumelo Fashion | Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet">
-    <link rel="stylesheet" href="css/style_index.css">
-    <link rel="stylesheet" href="css/weather.css">
-    <link rel="stylesheet" href="css/glass-main.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head> 
-<body>  
-    <!-- Background elements -->
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Gaming | Home</title>
 
-    <!-- Glass navbar -->
-    <nav class="glass-nav">
-        <div class="logo">
-            <h3><a href="index.html" class="logo-name">Boitumelo Fashion</a></h3>
-        </div>
-        <div class="nav-links-container">
-            <a href="index.html" class="nav-item active">Home</a>
-            <a href="products.html" class="nav-item">Products</a>
-            <a href="categories.html" class="nav-item">Categories</a>
-            <a href="contact.html" class="nav-item">Contact Us</a>
-            <a href="login.html" class="nav-item">Login</a>
-            <a href="#" class="nav-item" id="toggle-weather">Weather</a>
-           
-        </div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-         <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i>/button>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/weather.js"></script>
+  <script defer src="js/wishlist.js"></script>
+  <script defer src="js/recent.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎮 Gaming Store</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html">Contact</a>
     </nav>
-
-    <!-- Weather Widget -->
-    <div class="weather-widget">
-        <div class="weather-header">
-            <h3>Weather Forecast</h3>
-            <div class="weather-search">
-                <input type="text" id="location-input" placeholder="Enter city name">
-                <button id="search-btn">Search</button>
-                <button id="current-location-btn">Current Location</button>
-            </div>
-        </div>
-        <div class="weather-content">
-            <div class="current-weather">
-                <h2 id="location">Loading...</h2>
-                <div class="weather-info">
-                    <div class="temperature">
-                        <span id="temperature">--</span>°C
-                        <div class="weather-description">
-                            <img id="weather-icon-img" src="/placeholder.svg" alt="Weather icon">
-                            <span id="weather-description">--</span>
-                        </div>
-                    </div>
-                    <div class="weather-details">
-                        <div class="detail">
-                            <span class="label">Feels like:</span>
-                            <span id="feels-like">--</span>
-                        </div>
-                        <div class="detail">
-                            <span class="label">Humidity:</span>
-                            <span id="humidity">--</span>
-                        </div>
-                        <div class="detail">
-                            <span class="label">Wind:</span>
-                            <span id="wind-speed">--</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="forecast-container">
-                <h3>5-Day Forecast</h3>
-                <div id="forecast" class="forecast"></div>
-            </div>
-        </div>
+    <div class="header-tools">
+      <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+      <div id="weather" class="weather-widget">Loading weather...</div>
     </div>
-    <!-- End Weather Widget -->
+  </header>
 
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="glass-card hero-card">
-                <div class="hero-content">
-                    <h1>Elevate Your Style</h1>
-                    <p>Discover the latest fashion trends and express yourself</p>
-                    <a href="products.html" class="cta-button">Shop Now</a>
-                </div>
-                <div class="hero-image">
-                    <img src="images/index-img/Off-the-Wall.jpg" alt="Fashion Hero Image">
-                </div>
-            </div>
-        </section>
+  <main>
+    <section class="hero">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+          <div class="hero-content">
+            <h1>Welcome to the Ultimate Gaming Experience</h1>
+            <p>Explore consoles, accessories, and exclusive titles designed for true gamers.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+          </div>
+    </section>
 
-        <!-- Featured Categories -->
-        <section class="featured-section">
-            <div class="section-header glass-card">
-                <h2>Featured Categories</h2>
-                <p>Explore our curated collections</p>
-            </div>
-            <div class="featured-grid">
-                <a href="categories.html" class="glass-card category-card">
-                    <img src="images/index-img/1.png" alt="Category 1">
-                    <div class="card-overlay">
-                        <h3>Summer Collection</h3>
-                    </div>
-                </a>
-                <a href="categories.html" class="glass-card category-card">
-                    <img src="images/index-img/2.png" alt="Category 2">
-                    <div class="card-overlay">
-                        <h3>Accessories</h3>
-                    </div>
-                </a>
-                <a href="categories.html" class="glass-card category-card">
-                    <img src="images/index-img/3.png" alt="Category 3">
-                    <div class="card-overlay">
-                        <h3>Footwear</h3>
-                    </div>
-                </a>
-                <a href="categories.html" class="glass-card category-card">
-                    <img src="images/index-img/4.png" alt="Category 4">
-                    <div class="card-overlay">
-                        <h3>New Arrivals</h3>
-                    </div>
-                </a>
-            </div>
-        </section>
+    <section id="featured-products" class="product-grid">
+      <div class="product-card">
+        <img src="https://wallpapers.com/images/featured/ps5-console-png-ywbv2gv3gfw23o3w.jpg" alt="PS5 Console">
+        <h3>PS5 Console</h3>
+        <p>R12,000</p>
+        <p class="rating">⭐ 5</p>
+        <button class="wishlist-btn" data-id="1">❤️ Add to Wishlist</button>
+      </div>
 
-        <!-- Lifestyle Section -->
-        <section class="lifestyle-section">
-            <div class="section-header glass-card">
-                <h2>For the Young, Wild & Stylish</h2>
-                <p>Fashion that defines you</p>
-            </div>
-            <div class="lifestyle-grid">
-                <div class="glass-card lifestyle-card">
-                    <img src="images/index-img/anton-levin-P8prss71psk-unsplash.jpg" alt="Lifestyle 1">
-                    <div class="card-content">
-                        <h3>For the Young, Wild & Stylish</h3>
-                        <a href="categories.html" class="card-link">Explore</a>
-                    </div>
-                </div>
-                <div class="glass-card lifestyle-card">
-                    <img src="images/index-img/bogdan-glisik-2WgOPYJuPsU-unsplash (1).jpg" alt="Lifestyle 2">
-                    <div class="card-content">
-                        <h3>Just like your way to Conquer</h3>
-                        <a href="categories.html" class="card-link">Explore</a>
-                    </div>
-                </div>
-                <div class="glass-card lifestyle-card">
-                    <img src="images/index-img/calvin-lupiya--yPg8cusGD8-unsplash.jpg" alt="Lifestyle 3">
-                    <div class="card-content">
-                        <h3>Stands out like the Sun</h3>
-                        <a href="categories.html" class="card-link">Explore</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="product-card">
+        <img src="https://resource.logitechg.com/w_593,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/a50-gen-5/astro-a50-x-gen-5-sq-thumbnail.png?v=1" alt="PS5 Headset">
+        <h3>PS5 Headset</h3>
+        <p>R2,000</p>
+        <p class="rating">⭐ 4</p>
+        <button class="wishlist-btn" data-id="5">❤️ Add to Wishlist</button>
+      </div>
 
-        <!-- Trending Section -->
-        <section class="trending-section">
-            <div class="section-header glass-card">
-                <h2>TRENDING NOW</h2>
-                <p>From the runway to your wardrobe</p>
-            </div>
-            <div class="trending-grid">
-                <a href="products.html" class="glass-card product-card">
-                    <img src="images/index-img/ethan-haddox-QHGcADeeT00-unsplash.jpg" alt="Product 1">
-                    <div class="product-info">
-                        <h3>Premium Sneakers</h3>
-                        <span class="price">R1,299</span>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card product-card">
-                    <img src="images/index-img/andres-jasso-PqbL_mxmaUE-unsplash (1).jpg" alt="Product 2">
-                    <div class="product-info">
-                        <h3>Designer Shoes</h3>
-                        <span class="price">R1,499</span>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card product-card">
-                    <img src="images/index-img/raul-hender-afc4HxPy2GM-unsplash (1).jpg" alt="Product 3">
-                    <div class="product-info">
-                        <h3>Urban Sneakers</h3>
-                        <span class="price">R999</span>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card product-card">
-                    <img src="images/index-img/nike.png" alt="Product 4">
-                    <div class="product-info">
-                        <h3>Nike Air Max</h3>
-                        <span class="price">R1,899</span>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card product-card">
-                    <img src="images/index-img/my-shoes2.png" alt="Product 5">
-                    <div class="product-info">
-                        <h3>Classic Runners</h3>
-                        <span class="price">R1,199</span>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card product-card">
-                    <img src="images/index-img/my-shoes3.png" alt="Product 6">
-                    <div class="product-info">
-                        <h3>Sport Edition</h3>
-                        <span class="price">R1,599</span>
-                    </div>
-                </a>
-            </div>
-        </section>
+      <div class="product-card">
+        <img src="https://static.wikia.nocookie.net/spidermanps4/images/d/d4/Marvel%27s_Spider-Man_2_front_cover_%28US%29.png/revision/latest?cb=20230608203237" alt="Spider-Man 2">
+        <h3>Spider-Man 2</h3>
+        <p>R900</p>
+        <p class="rating">⭐ 5</p>
+        <button class="wishlist-btn" data-id="3">❤️ Add to Wishlist</button>
+      </div>
 
-        <!-- Style Inspiration Section -->
-        <section class="inspiration-section">
-            <div class="section-header glass-card">
-                <h2>STYLES TO STEAL</h2>
-                <p>Inspired by influencers</p>
-            </div>
-            <div class="inspiration-grid">
-                <a href="products.html" class="glass-card inspiration-card">
-                    <img src="images/index-img/girl1.png" alt="Style 1">
-                    <div class="card-overlay">
-                        <h3>Summer Vibes</h3>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card inspiration-card">
-                    <img src="images/index-img/girl2.png" alt="Style 2">
-                    <div class="card-overlay">
-                        <h3>Urban Chic</h3>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card inspiration-card">
-                    <img src="images/index-img/girl3.png" alt="Style 3">
-                    <div class="card-overlay">
-                        <h3>Casual Elegance</h3>
-                    </div>
-                </a>
-                <a href="products.html" class="glass-card inspiration-card">
-                    <img src="images/index-img/girl4.png" alt="Style 4">
-                    <div class="card-overlay">
-                        <h3>Street Style</h3>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
+      <div class="product-card">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png" alt="The Last of Us Part II">
+        <h3>The Last of Us Part II</h3>
+        <p>R850</p>
+        <p class="rating">⭐ 5</p>
+        <button class="wishlist-btn" data-id="4">❤️ Add to Wishlist</button>
+      </div>
 
-    <!-- Glass Footer -->
-    <footer class="glass-footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h2>Boitumelo FASHION🦋</h2>
-                <p class="footer-heading">ONLINE SHOPPING</p>
-                <ul class="footer-links">
-                    <li><a href="men.html">Men</a></li>
-                    <li><a href="women.html">Women</a></li>
-                    <li><a href="Kids.html">Kids</a></li>
-                    <li><a href="exclusive.html">Boitumelo Exclusive</a></li>
-                </ul>
-            </div>
+      <div class="product-card">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-store-art-01-10sep21$ru?$800px--t$" alt="God of War: Ragnarök">
+        <h3>God of War: Ragnarök</h3>
+        <p>R950</p>
+        <p class="rating">⭐ 5</p>
+        <button class="wishlist-btn" data-id="6">❤️ Add to Wishlist</button>
+      </div>
 
-            <div class="footer-column">
-                <p class="footer-heading">USEFUL LINKS</p>
-                <ul class="footer-links">
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="t&c.html">T&C</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
+      <div class="product-card">
+        <img src="https://atlas-content-cdn.pixelsquid.com/assets_v2/246/2463181035450406157/jpeg-600/G03.jpg?modifiedAt=1" alt="PS5 Charging Station">
+        <h3>PS5 Charging Station</h3>
+        <p>R600</p>
+        <p class="rating">⭐ 4</p>
+        <button class="wishlist-btn" data-id="8">❤️ Add to Wishlist</button>
+      </div>
 
-            <div class="footer-column">
-                <div class="footer-info">
-                    <p><strong>100% Original</strong> guarantee</p>
-                    <p class="footer-subtext">for all products at boitumelofashion.com</p>
-                </div>
-                <div class="footer-info">
-                    <p><strong>Return within 30days</strong> of</p>
-                    <p class="footer-subtext">receiving your order</p>
-                </div>
-                <div class="footer-info">
-                    <p><strong>Get free delivery</strong> for every</p>
-                    <p class="footer-subtext">order above R999</p>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p><a href="index.html">Boitumelo</a> &copy; 2025</p>
-        </div>
-    </footer>
+      <div class="product-card">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202204/0810/803Pm8uJoZ2Cl9fJPvTaXHqG.png" alt="PlayStation Plus Membership">
+        <h3>PlayStation Plus Membership</h3>
+        <p>R900</p>
+        <p class="rating">⭐ 4</p>
+        <button class="wishlist-btn" data-id="7">❤️ Add to Wishlist</button>
+      </div>
+    </section>
 
-    <script src="js/glass-main.js"></script>
-    <script src="js/weather.js"></script>
+    <section id="recently-viewed" class="recent-section">
+      <h2>Recently Viewed</h2>
+      <div class="recent-items" id="recent-items"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <!-- Logo & About -->
+      <div class="footer-section logo-about">
+        <h2>🎮 Gaming Store</h2>
+        <p>Your ultimate gaming store for consoles, accessories, and exclusive titles. Explore new worlds and level up your gaming experience.</p>
+      </div>
+  
+      <!-- Links Sections -->
+      <div class="footer-section">
+        <h3>Store</h3>
+        <ul>
+          <li><a href="store.html">All Products</a></li>
+          <li><a href="store.html">New Arrivals</a></li>
+          <li><a href="store.html">Best Sellers</a></li>
+          <li><a href="store.html">Deals & Offers</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Games</h3>
+        <ul>
+          <li><a href="products.html">PS5 Games</a></li>
+          <li><a href="products.html">PS4 Games</a></li>
+          <li><a href="products.html">VR Games</a></li>
+          <li><a href="products.html">Top Rated</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Marketplaces</h3>
+        <ul>
+          <li><a href="#">Digital Store</a></li>
+          <li><a href="#">Retail Partners</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Recently Viewed</a></li>
+          <li><a href="#">Compare Products</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Online Services</h3>
+        <ul>
+          <li><a href="#">PlayStation Plus</a></li>
+          <li><a href="#">Cloud Gaming</a></li>
+          <li><a href="#">Support & Help</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Gaming Store. All rights reserved. Gaming Store, the Gaming Store logo, DualSense, and all related logos and content are trademarks of Sony Interactive Entertainment Inc. Other brands or product names are the trademarks of their respective owners. Links to third-party websites are provided for convenience; we are not responsible for their content or accuracy.</p>
+    </div>
+  </footer>
+  
 </body>
 </html>

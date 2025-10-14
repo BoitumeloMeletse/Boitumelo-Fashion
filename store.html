@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store | Gaming</title>
+  <link rel="stylesheet" href="css/store.css">
+  <script defer src="js/store.js"></script>
+  <script defer src="js/wishlist.js"></script>
+  <script defer src="js/recent.js"></script>
+  <script defer src="js/map.js"></script>
+  <script defer src="js/weather.js"></script>
+  <!-- Leaflet CSS -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
+
+<!-- Leaflet JS -->
+<script
+defer
+src="https://unpkg.com/leaflet/dist/leaflet.js"
+></script>
+
+</head>
+<body>
+  <header>
+    <h1>🎮 Gaming Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="store.html" class="active">Store</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <button id="theme-toggle">🌙</button>
+      <div id="weather" class="weather-widget">Loading...</div>
+    </div>
+  </header>
+
+  <!-- Hero Video -->
+  <section id="hero">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="videos/PlayStation Productions Opening Animation.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-content">
+      <h1>Discover the Latest Games & Deals</h1>
+      <p>Check out new releases and hottest games in our store.</p>
+    </div>
+  </section>
+
+  <!-- Filter/Search Bar -->
+  <section class="filter-bar">
+    <input type="text" id="search" placeholder="Search for games...">
+    <select id="platformFilter">
+      <option value="all">All Platforms</option>
+      <option value="PlayStation 5">PlayStation 5</option>
+      <option value="PlayStation 4">PlayStation 4</option>
+    </select>
+  </section>
+
+  <!-- Games Grid -->
+  <main>
+    <section id="game-list" class="product-grid"></section>
+  </main>
+
+  <!-- Map Section -->
+  <section class="store-map">
+    <h2>Find Our Stores</h2>
+    <div id="map" style="height: 400px; width: 100%; border-radius: 10px;"></div>
+  </section>
+  
+
+  
+  <footer>
+    <div class="footer-container">
+      <!-- Logo & About -->
+      <div class="footer-section logo-about">
+        <h2>🎮 Gaming Store</h2>
+        <p>Your ultimate gaming store for consoles, accessories, and exclusive titles. Explore new worlds and level up your gaming experience.</p>
+      </div>
+  
+      <!-- Links Sections -->
+      <div class="footer-section">
+        <h3>Store</h3>
+        <ul>
+          <li><a href="store.html">All Products</a></li>
+          <li><a href="store.html">New Arrivals</a></li>
+          <li><a href="store.html">Best Sellers</a></li>
+          <li><a href="store.html">Deals & Offers</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Games</h3>
+        <ul>
+          <li><a href="products.html">PS5 Games</a></li>
+          <li><a href="products.html">PS4 Games</a></li>
+          <li><a href="products.html">VR Games</a></li>
+          <li><a href="products.html">Top Rated</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Marketplaces</h3>
+        <ul>
+          <li><a href="#">Digital Store</a></li>
+          <li><a href="#">Retail Partners</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Recently Viewed</a></li>
+          <li><a href="#">Compare Products</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Online Services</h3>
+        <ul>
+          <li><a href="#">PlayStation Plus</a></li>
+          <li><a href="#">Cloud Gaming</a></li>
+          <li><a href="#">Support & Help</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Gaming Store. All rights reserved. Gaming Store, the Gaming Store logo, DualSense, and all related logos and content are trademarks of Sony Interactive Entertainment Inc. Other brands or product names are the trademarks of their respective owners. Links to third-party websites are provided for convenience; we are not responsible for their content or accuracy.</p>
+    </div>
+  </footer>
+</body>
+</html>
